@@ -1,0 +1,19 @@
+<h2>Sign up using this form</h2>
+
+<?= $this->tag->form("signup/register"); ?>
+<input type="hidden" name="<?= $this->security->getTokenKey();?>" value="<?= $this->security->getToken();?>"/>
+ <p>
+    <label for="name">Name</label>
+    <?= $this->tag->textField("name");?>
+ </p>
+
+ <p>
+    <label for="email">E-Mail</label>
+    <?= $this->tag->textField("email") ?>
+ </p>
+
+ <p>
+    <?= $this->tag->submitButton("Register") ?>
+ </p>
+
+</form>

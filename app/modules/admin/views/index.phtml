@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+
+<html lang="zh">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <?= $this->tag->getTitle();?>
+    <?= $this->tag->stylesheetLink("css/style.css");?>
+    <?= $this->tag->javascriptInclude("js/main.js");?>
+  </head>
+  <body>
+  
+    <?= $this->getContent();?>
+    
+  </body>
+</html>
